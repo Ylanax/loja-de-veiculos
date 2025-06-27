@@ -6,6 +6,10 @@
     font-family: 'Poppins';
 }
 
+body{
+    background-color: gray;
+}
+
 header {
     text-align: center;
     margin-bottom: 10px;
@@ -21,4 +25,46 @@ header {
     width: 100%;
     object-fit: cover;
     margin-bottom: 30px;
+}
+
+.display-5{
+    color: black;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+}
+
+/*.container{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container h2{
+    width: 100%;
+}
+
+.container img{
+    width: 300px;
+    margin: 10px 300px;
+}
+
+.container p{
+    margin: 0 50px;
+}
+*/
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer small {
+    display: block;
 }
