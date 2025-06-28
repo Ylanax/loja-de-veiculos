@@ -68,3 +68,31 @@ footer img {
 footer small {
     display: block;
 }
+
+.lista-filmes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card-filme {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.lista-filmes img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.auto-text{
+    text-align: center;
+}
+
+.fundo-a{
+    color: gray;
+}

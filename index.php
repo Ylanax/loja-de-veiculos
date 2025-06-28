@@ -1,90 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+include "cabecalho.php";
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DriveWay</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header>
-        <img src="imagens/logo.png" class="logo mb-0" height="95">
-        <h1 class="logo-texto">DriveWay</h1>
-        <nav>
-            <button type="button" class="btn btn-outline-dark fw-semibold">Home</button>
-            <button type="button" class="btn btn-outline-dark me-1 fw-semibold">Automóveis</a>
-                <button type="button" class="btn btn-outline-dark fw-semibold">Contato</a>
-        </nav>
-    </header>
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="imagens/mustang.jpg" class="d-block w-100 banner" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/audi.jpg" class="d-block w-100 banner" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/porshe.jpg" class="d-block w-100 banner" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/corvette.jpg" class="d-block w-100 banner" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+<?php
+include "banner.php";
+?>
+    
     <div class="container">
         <h2 class="display-5">Mais Populares</h2>
 
         <div class="row mt-5">
-            <?php
-            /* inicio da conexão com o BD */
-            $servidor = 'localhost';
-            $bd = 'bd_loja_automotiva';
-            $usuario = 'root';
-            $senha = '';
-
-            $conexao = mysqli_connect($servidor, $usuario, $senha, $bd);
-            if (!$conexao) {
-                die("deu ruim" . mysqli_connect_error());
-            }
-
-            /* fim da conexão */
-
-            $sql = "select * from veiculos";
-            $resultado = mysqli_query($conexao, $sql);
-
-            //echo "<pre>";
-            //print_r($resultado);
-            //exit();   
-            while ($linha = mysqli_fetch_assoc($resultado)) {
-            ?>
-                <div class="col-3 mb-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src="img/filme1.webp" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Jurassic Park</h5>
-                            <p class="card-text">⭐ 10/10</p>
-                            <a href="umfilme.php" class="btn btn-primary">Veja detalhes</a>
-                        </div>
+            <div class="col-3 mb-3">
+                <div class="card bg-dark text-white" style="width: 18rem;">
+                    <img src="imagens/audi.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Honda: CR-V</h5>
+                        <h5 class="ano-fab fw-normal">Ano de Fabricação: 2025</h5>
+                        <h5 class="ano-mod fw-normal">Ano do Modelo: 2025</h5>
+                        <h5 class="cor fw-normal">Cor: Canyon River Blue Metallic</h5>
+                        <h5 class="combustivel fw-normal">Combústivel: Híbrido</h5>
+                        <h5 class="tipo-veiculo fw-normal">Tipo: Crossover</h5>
+                        <h5 class="cat mb-3 fw-normal">Categoria: SUV</h5>
+                        <a href="automoveis.php" class="btn btn-secondary">Detalhes</a>
                     </div>
                 </div>
-            <?php
-            }
-            mysqli_close($conexao);
-            ?>
-
+            </div>
         </div>
         <div class="row">
             <div class="col-6">
@@ -129,12 +69,7 @@
             </div>
         </div>
 
-
-        <footer class="rodape">
-            <hr>
-            <img src="imagens/logo.png">
-            <small class="fw-semibold text-black"><?php echo date("Y"); ?></small>
-        </footer>
+        <?php include "rodape.php"; ?>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
