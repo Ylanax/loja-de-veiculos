@@ -5,7 +5,7 @@ $id = $_GET['id'];
 
 include "conexao.php";
 
-$sql = "select * from veiculos where id = $id ";
+$sql = "select * from veiculos where id = $id";
 
 $resultado = mysqli_query($conexao, $sql);
 
@@ -39,15 +39,15 @@ mysqli_close($conexao);
         <div class="col">
             <img src="<?= $foto ?>" class="img-fluid">
         </div>
-        <div class="col">
-            <h4><?=$linha['marca']; ?>
-            <h5 class="ano-fab fw-normal">Modelo: <?= $linha['modelo']; ?></h5>
-            <h5 class="ano-fab fw-normal">Ano de Fabricação: <?= $linha['ano_fabricacao']; ?></h5>
-            <h5 class="ano-mod fw-normal">Ano do Modelo: <?= $linha['ano_modelo']; ?></h5>
-            <h5 class="cor fw-normal">Cor: <?= $linha['cor']; ?></h5>
-            <h5 class="combustivel fw-normal">Combústivel: <?= $linha['tipo_combustivel']; ?></h5>
-            <h5 class="tipo-veiculo fw-normal">Tipo: <?= $linha['tipo_veiculo']; ?></h5>
-            <h5 class="cat mb-3 fw-normal">Categoria: <?= $linha['categoria']; ?></h5>
+        <div class="col pt-5">
+            <h4 class="fw-bold "><?= $marca; ?>
+            <h5 class="ano-fab fw-semibold">Modelo: <?= $modelo; ?></h5>
+            <h5 class="ano-fab fw-semibold">Ano de Fabricação: <?= $ano_fabricacao; ?></h5>
+            <h5 class="ano-mod fw-semibold">Ano do Modelo: <?= $ano_modelo; ?></h5>
+            <h5 class="cor fw-semibold">Cor: <?= $cor; ?></h5>
+            <h5 class="combustivel fw-semibold">Combústivel: <?= $tipo_combustivel; ?></h5>
+            <h5 class="tipo-veiculo fw-semibold">Tipo: <?= $tipo_veiculo; ?></h5>
+            <h5 class="cat mb-3 fw-semibold">Categoria: <?= $categoria; ?></h5>
         </div>
     </div>
 </div>

@@ -19,8 +19,8 @@ include "cabecalho.php";
                     <img src=<?= $linha['foto']; ?> class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title fw-bold text-center mb-3"><?=$linha['marca']; ?></h4>
-                        <p><?=$linha['detalhes']; ?></p>
-                        <a href="umveiculo.php" class="btn btn-secondary d-flex justify-content-center fw-semibold">Detalhes</a>
+                        <p class="botoes"><?=$linha['detalhes']; ?></p>
+                        <a href="umveiculo.php?id=<?=$linha['id'];?>" class="btn btn-secondary d-flex justify-content-center fw-semibold">Detalhes</a>
                     </div>
                 </div>
             </div>
