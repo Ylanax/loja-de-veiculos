@@ -42,7 +42,7 @@ include "banner.php";
                     <li>Transmissão: Manual de 6 marchas / Automática de dupla embreagem (DCT) de 7 marchas (opcional).</li>
                     <li>Performance (M4 padrão): 0–100 km/h: ~4,1 segundos (com DCT) // Velocidade máxima: 250 km/h (limitada eletronicamente).</li>
                 </ul>
-                <a href="https://www.bmw.com.br/pt/all-models/m-series/bmw-4-series-m-models/bmw-m4-coupe.html#dados-tecnicos" class="btn btn-dark fw-bold">Saiba Mais</a>
+                <a href="https://www.bmw.com.br/pt/all-models/m-series/bmw-4-series-m-models/bmw-m4-coupe.html#dados-tecnicos" class="btn btn-dark fw-semibold">Saiba Mais</a>
             </div>
         </div>
 
@@ -62,7 +62,7 @@ include "banner.php";
                     <li>Transmissão: Automática de dupla embreagem, 7 marchas</li>
                     <li>Tração: Traseira (RWD)</li>
                 </ul>
-                <a href="https://www.ferrari.com/en-EN/search?search=ferrari%20408%20speciale&curr=0%7C0&active=0&limit=15%7C15&order=default%7Cdefault&lang=en%7Cen" class="btn btn-light fw-bold">Saiba Mais</a>
+                <a href="https://www.ferrari.com/en-EN/search?search=ferrari%20408%20speciale&curr=0%7C0&active=0&limit=15%7C15&order=default%7Cdefault&lang=en%7Cen" class="btn btn-light fw-semibold">Saiba Mais</a>
             </div>
             <div class="col-6 mt-5">
                 <img src="imagens/ferrari.jpg" class="img-fluid">
