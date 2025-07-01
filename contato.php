@@ -3,7 +3,7 @@ include "cabecalho.php";
 ?>
 
 <div class="form-container">
-        <h2>Fale com a gente</h2>
+        <h2>Entre em contato com nossos vendedores!</h2>
         <form action="resposta.php" method="post">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
